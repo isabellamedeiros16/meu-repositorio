@@ -7,15 +7,15 @@
     --cor-fundo: #3c3c3c;
     --cor-texto: #e9e9e9;
 
-    --menu-link:#ffffff;
+    --menu-link: #ffffff;
 
 }
 
 :root[data-theme='light'] {
---cor-fundo: #dddada;
---cor-texto: #1b1b1b;
+    --cor-fundo: #dddada;
+    --cor-texto: #1b1b1b;
 
-    --menu-link:#000000;
+    --menu-link: #000000;
 
 }
 
@@ -55,6 +55,35 @@ header {
     display: none;
     /* esconde o menu desktop */
 }
+
+/*  NAV= UL // OL */
+.menu {
+    display: flex;
+    /* em linha */
+    /* horizontal */
+    gap: 2rem;
+    /* 16px */
+    align-items: center;
+}
+
+/* LI = listas */
+.menu-item {
+    width: 100%;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+}
+
+.menu-text {
+    color: var(--menu-link);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+/* menu hamburguer */
+
 
 /* Medidas Responsivas */
 @media (min-width:768px) {
