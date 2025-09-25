@@ -20,7 +20,11 @@
     --cor-borda: #313131;
 }
 
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 
@@ -126,35 +130,60 @@ botao menu mobile */
 }
 
 
-.menu-mobile /* nav */
-.menu-list/* ul */ {
-display: flex;
-flex-direction: column; /*  eixo Y = vertical */
-gap: 1rem;
-width: 90%;
-padding: 1rem 1rem 2rem;
+.menu-mobile
+/* nav */
+.menu-list
+
+/* ul */
+    {
+    display: flex;
+    flex-direction: column;
+    /*  eixo Y = vertical */
+    gap: 1rem;
+    width: 90%;
+    padding: 1rem 1rem 2rem;
 
 }
+
 .menu-mobile .menu-item {
     width: 100%;
     text-align: center;
 }
 
 .menu-mobile .menu-link {
-padding: 0.5rem 0;
-display: inline-block;
-font-size: 1rem;
+    padding: 0.5rem 0;
+    display: inline-block;
+    font-size: 1rem;
 }
 
 .logo {
-        width: 4.50rem; /* comprimento */
-        height: 2.40rem ; /* altura */
+    width: 4.50rem;
+    /* comprimento */
+    height: 2.40rem;
+    /* altura */
 }
- .header-toggle {
+
+.header-toggle {
     display: flex;
     justify-content: flex-end;
     align-items: center;
- }
+}
+
+#home {
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
 
 /* Medidas Responsivas */
 @media (min-width:768px) {
@@ -170,6 +199,30 @@ font-size: 1rem;
     .header-toggle {
         min-width: 30%;
     }
+header {
+    padding: 1rem 6rem;
+}
+h1 {
+font-size: 5rem;
+}
 
+#home {
+    padding: 1.5rem 4rem 4rem 8rem;
+}
+
+.main-content {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+} /* FIM min 768px */
+
+@media (min-width:1400px) {
+h1{
+    font-size: 6.5rem;
+}
 
 }
+
+
